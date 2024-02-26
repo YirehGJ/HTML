@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen_AYGJ</title>
+</head>
+<style>
+    p::after{
+        content: 'Angel Yireh Garcia Jara';
+    }
+    @media screen and (max-width: 992px) {
+        p::after{
+            content: 'Angel Garcia';
+        }      
+        
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303030;
+}
+
+li {
+  float: left;
+  border-right: 1px solid gray;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a:hover {
+    color: rgb(70, 0, 100);
+}
+
+li:last-child {
+  border-right: none;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Enviar {
+  background-color: darkviolet;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Enviar:hover {
+  background-color: rgb(70, 0, 100);
+}
+</style>
+
+<body>
+    <ul>
+        <li><a href="#">Pagina 1</a></li>
+        <li><a href="#">Pagina 2</a></li>
+        <li><a href="#">Pagina 3</a></li>
+    </ul>
+
+    <center>
+        <p></p>
+    </center>
+    <div class="container">
+        <form enctype="text/plain" method="post" action="mailto:marco.cordero@universidad-une.com?subject=Parcial 1">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="Correo" required>
+          </div>
+          <button type="submit" class="Enviar">Enviar Correo</button>
+        </form>
+      </div>
+</body>
+
+</html>

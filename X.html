@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* Escribe aquí tus estilos */
+
+        @media only screen and (max-width: 750px) {
+
+        }
+
+        ul {
+            background-color: #303030;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            width: 100%;
+            list-style: none;
+            color: white;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid gray;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Pagina 1</a></li>
+        <li><a href="">Pagina 2</a></li>
+        <li><a href="">Pagina 3</a></li>
+    </ul>
+    <form enctype="text/plain" method="post" action="mailto:marco.cordero@universidad-une.com?subject=Parcial 1">
+       <Label for="Nombre">Nombre: </Label><br>
+       <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required>
+       <Label for="Apellido">Apellido: </Label><br>
+       <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required>
+       <label for="Correo">Correo: </label><br>
+       <input type="email" name="Correo" id="Correo" placeholder="Correo" required><br>
+       <input type="submit" value="Enviar &#9993;">
+    </form>
+</body>
+
+</html>
